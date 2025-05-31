@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telegram频道管理系统</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 <body>
     <header>
@@ -23,17 +24,71 @@
     </header>
 
     <main class="container">
+        <section class="pain-points">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <i class="feature-icon">📁</i>
+                            <h3>你还在为频道炸了一个一个上传资料而烦恼吗?</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <i class="feature-icon">📅</i>
+                            <h3>你还在手动表格记录老师的上榜到期时间吗?</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <i class="feature-icon">🔍</i>
+                            <h3>你还在为了更新老师资料而在频道一个个找而烦恼吗?</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-content">
+                            <i class="feature-icon">🔄</i>
+                            <h3>你还在手动一个个设置老师的轮播图吗?</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
         <section class="hero">
             <h2>专业的Telegram频道管理</h2>
             <p>使用我们强大的管理工具简化您的频道运营</p>
             <a href="product.html" class="btn">了解更多</a>
         </section>
+    
+        
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Telegram频道管理系统 版权所有</p>
+            <p>&copy; 2025 Telegram频道管理系统 版权所有</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
